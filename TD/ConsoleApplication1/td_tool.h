@@ -65,7 +65,7 @@ public:
 	void goToXY(int, int);
 	void changeStateCusor(bool);
 	void draw(Graphic &, Coordinate &);
-	//void erase(Graphic, Coordinate);
+	void erase(Graphic &, Coordinate &, Graphic &);
 
 	short getKeyPress();
 	void clearConsole();

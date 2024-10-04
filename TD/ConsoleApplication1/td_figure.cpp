@@ -1,7 +1,7 @@
 #pragma once
 #include "td_figure.h"
 
-Graphic Figure::getCostume() {
+Graphic & Figure::getCostume() {
 	return costume;
 }
 

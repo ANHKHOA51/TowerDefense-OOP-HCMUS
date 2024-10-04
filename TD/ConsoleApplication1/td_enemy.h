@@ -1,5 +1,6 @@
 #pragma once
 #include "td_figure.h"
+#include "td_map.h"
 
 class Enemy : public Figure{
 private:
@@ -8,7 +9,7 @@ private:
 public:
 	Enemy(short, short, string);
 	~Enemy();
-	void move();
+	void move(Map &);
 	
 	void setHP(short);
 	short getHP();
@@ -16,4 +17,6 @@ public:
 	short getCurrentHP();
 	void setSpeed(short);
 	short getSpeed();
+
+	//friend class Map;
 };

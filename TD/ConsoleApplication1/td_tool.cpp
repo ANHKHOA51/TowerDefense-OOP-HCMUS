@@ -92,23 +92,30 @@ void ToolInGame::draw(Graphic & costume, Coordinate & coord) {
 			mtx.lock();
 			goToXY(st_coord_x + j, st_coord_y + i);
 			char color = costume.getPixel(i, j) - 'a';
-			setConsoleColor(color, BLACK);
+			setConsoleColor(color, WHITE);
 			cout << " ";
 			mtx.unlock();
 		} 
 	}
-	
-	Sleep(100);
-	for (int i = 0; i < n_row; i++) {
-		for (int j = 0; j < n_col; j++) {
+	return;
+}
+
+void ToolInGame::erase(Graphic & costume, Coordinate & coord, Graphic & costume_map) {
+	short n_row = costume.getNumberOfRow();
+	short n_col = costume.getNumberOfCol();
+	short st_coord_x = coord.getCoordX();
+	short st_coord_y = coord.getCoordY();
+
+	for (short i = 0; i < n_row; i++) {
+		for (short j = 0; j < n_col; j++) {
 			mtx.lock();
+			char color = costume_map.getPixel(i + st_coord_y, j + st_coord_x) - 'a';
 			goToXY(st_coord_x + j, st_coord_y + i);
-			setConsoleColor(BLACK, BLACK);
+			setConsoleColor(color, BLACK);
 			cout << " ";
 			mtx.unlock();
 		}
 	}
-	
 }
 
 void ToolInGame::setConsoleColor(int background, int text)

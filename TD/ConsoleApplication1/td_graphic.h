@@ -7,7 +7,7 @@ using namespace std;
 
 class Graphic {
 private:
-	string *pixel;
+	char** pixel;
 	int n_row, n_col;
 
 public:

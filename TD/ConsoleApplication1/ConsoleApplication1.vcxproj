@@ -132,6 +132,7 @@
     <ClCompile Include="td_enemy.cpp" />
     <ClCompile Include="td_figure.cpp" />
     <ClCompile Include="td_graphic.cpp" />
+    <ClCompile Include="td_map.cpp" />
     <ClCompile Include="td_tool.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +140,7 @@
     <ClInclude Include="td_enemy.h" />
     <ClInclude Include="td_figure.h" />
     <ClInclude Include="td_graphic.h" />
+    <ClInclude Include="td_map.h" />
     <ClInclude Include="td_tool.h" />
   </ItemGroup>
   <ItemGroup>
