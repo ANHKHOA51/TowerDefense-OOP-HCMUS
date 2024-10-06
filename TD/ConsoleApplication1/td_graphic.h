@@ -11,10 +11,7 @@ private:
 	int n_row, n_col;
 
 public:
-	Graphic() {
-		n_row = n_col = 0;
-		pixel = NULL;
-	};
+	Graphic();
 	~Graphic();
 	void setPixel(string);
 	char getPixel(short , short);

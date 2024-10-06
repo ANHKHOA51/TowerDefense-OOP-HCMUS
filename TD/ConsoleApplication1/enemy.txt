@@ -1,6 +1,6 @@
-5 5
-bbbbb
-bbbbb
-bbbbb
-bbbbb
-bbbbb
+5 10
+00aa00aa00
+0aaaaaaaa0
+aabbaabbaa
+0aaaaaaaa0
+00aaaaaa00

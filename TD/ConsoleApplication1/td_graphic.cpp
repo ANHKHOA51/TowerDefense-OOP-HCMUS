@@ -1,13 +1,14 @@
 #pragma once
 #include "td_graphic.h"
 
+Graphic::Graphic() {
+	n_row = n_col = 0;
+	pixel = NULL;
+};
+
 Graphic::~Graphic() {
-	/*	for (int i = 0; i < n_row; i++)
+	for (int i = 0; i < n_row; i++)
 		delete[] pixel[i];
-	
-	//delete[] pixel;
-	pixel = nullptr;
-	*/
 	delete[] pixel;
 	pixel = nullptr;
 }

@@ -5,6 +5,8 @@ Tool::Tool() {
 	console_window = GetConsoleWindow();
 	system_menu = GetSystemMenu(console_window, false);
 	console_output = GetStdHandle(STD_OUTPUT_HANDLE);
+	height_console_screen = 40;
+	width_console_screen = 200;
 }
 
 //===============================================================================================//
@@ -86,16 +88,20 @@ void ToolInGame::draw(Graphic & costume, Coordinate & coord) {
 	short n_col = costume.getNumberOfCol();
 	short st_coord_x = coord.getCoordX();
 	short st_coord_y = coord.getCoordY();
-	
 	for (short i = 0; i < n_row; i++) {
 		for (short j = 0; j < n_col; j++) {
+			if (st_coord_x + j < 0 || st_coord_x + j >= width_console_screen ||
+				st_coord_y + i < 0 || st_coord_y + i >= height_console_screen)
+				continue;
 			mtx.lock();
-			goToXY(st_coord_x + j, st_coord_y + i);
 			char color = costume.getPixel(i, j) - 'a';
-			setConsoleColor(color, WHITE);
-			cout << " ";
+			if (color >= 0 && color < 16) {
+				goToXY(st_coord_x + j, st_coord_y + i);
+				setConsoleColor(color, WHITE);
+				cout << " ";
+			}
 			mtx.unlock();
-		} 
+		}
 	}
 	return;
 }
@@ -108,11 +114,16 @@ void ToolInGame::erase(Graphic & costume, Coordinate & coord, Graphic & costume_
 
 	for (short i = 0; i < n_row; i++) {
 		for (short j = 0; j < n_col; j++) {
+			if (st_coord_x + j < 0 || st_coord_x + j >= width_console_screen ||
+				st_coord_y + i < 0 || st_coord_y + i >= height_console_screen)
+				continue;
 			mtx.lock();
 			char color = costume_map.getPixel(i + st_coord_y, j + st_coord_x) - 'a';
-			goToXY(st_coord_x + j, st_coord_y + i);
-			setConsoleColor(color, BLACK);
-			cout << " ";
+			if (color >= 0 && color < 16) {
+				goToXY(st_coord_x + j, st_coord_y + i);
+				setConsoleColor(color, BLACK);
+				cout << " ";
+			}
 			mtx.unlock();
 		}
 	}

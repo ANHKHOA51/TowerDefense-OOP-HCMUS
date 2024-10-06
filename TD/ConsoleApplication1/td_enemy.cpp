@@ -4,31 +4,45 @@ Enemy::Enemy(short spd, short h, string file_costume) {
 	hp = cur_hp = h;
 	speed = spd;
 	setCostume(file_costume);
-
-	path = new Coordinate[50];
-	len_path = 50;
-	for (int i = 0; i < len_path; i++) {
-		Coordinate tmp;
-		tmp.setCoordX(i);
-		tmp.setCoordY(h);
-		path[i] = tmp;
-	}
+	setCurrentCoordinate(0, 0);
 }
 
 Enemy::~Enemy() {
-	delete[] path;
+	//delete[] path;
 }
 
 void Enemy::move(Map & m) {
 	ToolInGame t = ToolInGame();
 	Graphic & costume_map = m.getCostume();
-	Coordinate coord_map = m.getCurrentCoordinate();
+	short len_path = m.getLengthOfMap();
 	for (int i = 0; i < len_path; i++) {
-		cur_coord = path[i];
-		//cout << cur_coord.getCoordX() << " " << cur_coord.getCoordY() << "\n";
+		cur_coord = m.getCoordinateOfPath(i);//path[i];
 		t.draw(costume, cur_coord);
-		Sleep(200);
+		Sleep(500);
 		t.erase(costume, cur_coord, costume_map);
-		//t.draw(costume_map, coord_map);
 	}
+}
+
+short Enemy::getCurrentHP() {
+	return cur_hp;
+}
+
+void Enemy::setCurrentHP(short src) {
+	cur_hp = src;
+}
+
+short Enemy::getHP() {
+	return hp;
+}
+
+void Enemy::setHP(short src) {
+	hp = src;
+}
+
+short Enemy::getSpeed() {
+	return speed;
+}
+
+void Enemy::setSpeed(short src) {
+	speed = src;
 }

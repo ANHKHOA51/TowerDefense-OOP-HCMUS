@@ -8,10 +8,10 @@ short Coordinate::getCoordY() {
 	return coord_y;
 }
 
-void Coordinate::setCoordX(const short & x) {
+void Coordinate::setCoordX(short x) {
 	coord_x = x;
 }
 
-void Coordinate::setCoordY(const short & y) {
+void Coordinate::setCoordY(short y) {
 	coord_y = y;
 }

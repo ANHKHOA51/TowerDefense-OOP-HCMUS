@@ -4,8 +4,7 @@
 
 class Enemy : public Figure{
 private:
-	short hp, cur_hp, speed, len_path;
-	Coordinate* path;
+	short hp, cur_hp, speed;
 public:
 	Enemy(short, short, string);
 	~Enemy();
@@ -17,6 +16,4 @@ public:
 	short getCurrentHP();
 	void setSpeed(short);
 	short getSpeed();
-
-	//friend class Map;
 };
