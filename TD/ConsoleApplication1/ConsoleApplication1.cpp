@@ -108,16 +108,40 @@ int main()
     /*t1.join();
     t2.join();
     t3.join();*/
-    Bullet b(10, "bullet.txt");
+    int s = 5;
+    Bullet a(s, "bullet.txt");
+    Bullet b(s, "bullet.txt");
+    Bullet c(s, "bullet.txt");
+    Bullet d(s, "bullet.txt");
+    Bullet e(s, "bullet.txt");
+    Bullet f(s, "bullet.txt");
+    Bullet g(s, "bullet.txt");
+    Bullet h(s, "bullet.txt");
     //b.setCurrentCoordinate(10, 10);
-   //b.shootUP(30, 30, m);
-    //b.shootTOP_RIGHT(30, 30, m);
+    //b.shootUP(30, 30, m);
+    thread t1(&Bullet::shootUP, &a, 100, 20, ref(m));
+    thread t2(&Bullet::shootTOP_RIGHT, &b, 100, 20, ref(m));
+    thread t3(&Bullet::shootRIGHT, &c, 100, 20, ref(m));
+    thread t4(&Bullet::shootDOWN_RIGHT, &d, 100, 20, ref(m));
+    thread t5(&Bullet::shootDOWN, &e, 100, 20, ref(m));
+    thread t6(&Bullet::shootDOWN_LEFT, &f, 100, 20, ref(m));
+    thread t7(&Bullet::shootLEFT, &g, 100, 20, ref(m));
+    thread t8(&Bullet::shootTOP_LEFT, &h, 100, 20, ref(m));
+    /*b.shootTOP_RIGHT(30, 30, m);
     b.shootRIGHT(30, 30, m);
-    //b.shootDOWN_RIGHT(30, 30, m);
-    //b.shootDOWN(30, 30, m);
-    //b.shootDOWN_LEFT(30, 30, m);
-    //b.shootLEFT(30, 30, m);
-    //b.shootTOP_LEFT(30, 30, m);
+    b.shootDOWN_RIGHT(30, 30, m);
+    b.shootDOWN(30, 30, m);
+    b.shootDOWN_LEFT(30, 30, m);
+    b.shootLEFT(30, 30, m);
+    b.shootTOP_LEFT(30, 30, m);*/
+    t1.join();
+    t2.join();
+    t3.join();
+    t4.join();
+    t5.join();
+    t6.join();
+    t7.join();
+    t8.join();
     
     cin.get();
     return 0;

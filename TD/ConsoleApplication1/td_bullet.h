@@ -17,9 +17,17 @@ public:
 		this->speed = speed;
 	}
 
+	int getSpeed() {
+		return speed;
+	}
+
+	void setSpeed(int speed) {
+		this->speed = speed;
+	}
+
 	void shootUP(short startX, short startY, Map& m) {
 		setCurrentCoordinate(startX, startY);
-		Graphic costume_map = m.getCostume();
+		Graphic& costume_map = m.getCostume();
 		ToolInGame t = ToolInGame();
 
 		if (speed == 0) {
@@ -39,12 +47,12 @@ public:
 
 			}
 		}
-		
+
 	}
 
 	void shootDOWN(short startX, short startY, Map& m) {
 		setCurrentCoordinate(startX, startY);
-		Graphic costume_map = m.getCostume();
+		Graphic& costume_map = m.getCostume();
 		ToolInGame t = ToolInGame();
 
 		if (speed == 0) {
@@ -69,7 +77,7 @@ public:
 
 	void shootLEFT(short startX, short startY, Map& m) {
 		setCurrentCoordinate(startX, startY);
-		Graphic costume_map = m.getCostume();
+		Graphic& costume_map = m.getCostume();
 		ToolInGame t = ToolInGame();
 
 		if (speed == 0) {
@@ -94,7 +102,7 @@ public:
 
 	void shootRIGHT(short startX, short startY, Map& m) {
 		setCurrentCoordinate(startX, startY);
-		Graphic costume_map = m.getCostume();
+		Graphic& costume_map = m.getCostume();
 		ToolInGame t = ToolInGame();
 
 		if (speed == 0) {
@@ -116,10 +124,10 @@ public:
 		}
 
 	}
-	
+
 	void shootTOP_LEFT(short startX, short startY, Map& m) {
 		setCurrentCoordinate(startX, startY);
-		Graphic costume_map = m.getCostume();
+		Graphic& costume_map = m.getCostume();
 		ToolInGame t = ToolInGame();
 
 		if (speed == 0) {
@@ -133,7 +141,7 @@ public:
 				Sleep(1000 / speed);
 				t.erase(costume, cur_coord, costume_map);
 
-				startX--;
+				startX -= 2;
 				startY--;
 
 				setCurrentCoordinate(startX, startY);
@@ -145,7 +153,7 @@ public:
 
 	void shootTOP_RIGHT(short startX, short startY, Map& m) {
 		setCurrentCoordinate(startX, startY);
-		Graphic costume_map = m.getCostume();
+		Graphic& costume_map = m.getCostume();
 		ToolInGame t = ToolInGame();
 
 		if (speed == 0) {
@@ -159,7 +167,7 @@ public:
 				Sleep(1000 / speed);
 				t.erase(costume, cur_coord, costume_map);
 
-				startX++;
+				startX += 2;
 				startY--;
 
 				setCurrentCoordinate(startX, startY);
@@ -171,7 +179,7 @@ public:
 
 	void shootDOWN_LEFT(short startX, short startY, Map& m) {
 		setCurrentCoordinate(startX, startY);
-		Graphic costume_map = m.getCostume();
+		Graphic& costume_map = m.getCostume();
 		ToolInGame t = ToolInGame();
 
 		if (speed == 0) {
@@ -185,7 +193,7 @@ public:
 				Sleep(1000 / speed);
 				t.erase(costume, cur_coord, costume_map);
 
-				startX--;
+				startX -= 2;
 				startY++;
 
 				setCurrentCoordinate(startX, startY);
@@ -197,7 +205,7 @@ public:
 
 	void shootDOWN_RIGHT(short startX, short startY, Map& m) {
 		setCurrentCoordinate(startX, startY);
-		Graphic costume_map = m.getCostume();
+		Graphic& costume_map = m.getCostume();
 		ToolInGame t = ToolInGame();
 
 		if (speed == 0) {
@@ -211,7 +219,7 @@ public:
 				Sleep(1000 / speed);
 				t.erase(costume, cur_coord, costume_map);
 
-				startX++;
+				startX += 2;
 				startY++;
 
 				setCurrentCoordinate(startX, startY);
