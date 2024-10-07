@@ -146,6 +146,7 @@
     <ClInclude Include="td_tool.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="bullet.txt" />
     <Text Include="enemy.txt" />
     <Text Include="map.txt" />
     <Text Include="path.txt" />
