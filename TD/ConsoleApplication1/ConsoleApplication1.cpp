@@ -108,9 +108,16 @@ int main()
     /*t1.join();
     t2.join();
     t3.join();*/
-    Bullet b(5, "bullet.txt");
-    b.setCurrentCoordinate(10, 10);
-    b.shootUP(30, 30, m);
+    Bullet b(10, "bullet.txt");
+    //b.setCurrentCoordinate(10, 10);
+   //b.shootUP(30, 30, m);
+    //b.shootTOP_RIGHT(30, 30, m);
+    b.shootRIGHT(30, 30, m);
+    //b.shootDOWN_RIGHT(30, 30, m);
+    //b.shootDOWN(30, 30, m);
+    //b.shootDOWN_LEFT(30, 30, m);
+    //b.shootLEFT(30, 30, m);
+    //b.shootTOP_LEFT(30, 30, m);
     
     cin.get();
     return 0;
