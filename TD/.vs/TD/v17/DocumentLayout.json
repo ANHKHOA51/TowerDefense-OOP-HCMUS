@@ -63,8 +63,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-08T06:07:09.855Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -77,8 +76,7 @@
               "ViewState": "AQIAABUAAAAAAAAAAAAAACIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-08T06:09:26.486Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -90,8 +88,7 @@
               "RelativeToolTip": "ConsoleApplication1\\ToolInGame.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-08T06:19:21.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T06:19:21.472Z"
             },
             {
               "$type": "Document",
@@ -103,8 +100,7 @@
               "RelativeToolTip": "ConsoleApplication1\\ToolInGame.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-08T06:17:09.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T06:17:09.992Z"
             },
             {
               "$type": "Document",
@@ -116,8 +112,7 @@
               "RelativeToolTip": "ConsoleApplication1\\Enemy.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-08T06:16:32.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T06:16:32.428Z"
             },
             {
               "$type": "Document",
@@ -129,8 +124,7 @@
               "RelativeToolTip": "ConsoleApplication1\\Enemy.cpp",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-08T06:15:28.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T06:15:28.38Z"
             },
             {
               "$type": "Document",
@@ -142,8 +136,7 @@
               "RelativeToolTip": "ConsoleApplication1\\Figure.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-08T06:14:03.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T06:14:03.989Z"
             },
             {
               "$type": "Document",
@@ -168,8 +161,7 @@
               "RelativeToolTip": "ConsoleApplication1\\ConsoleApplication1.cpp",
               "ViewState": "AQIAABIAAAAAAAAAAAAAACcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-08T06:11:25.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T06:11:25.989Z"
             },
             {
               "$type": "Document",
@@ -181,8 +173,7 @@
               "RelativeToolTip": "ConsoleApplication1\\ToolConsole.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-08T06:09:46.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T06:09:46.269Z"
             }
           ]
         }

@@ -3,3 +3,8 @@
 *.suo
 *.dbmdl
 *.jfm
+.x64/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+

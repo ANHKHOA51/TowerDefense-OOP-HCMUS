@@ -1,6 +1,1 @@
-﻿  ConsoleApplication1.cpp
-  Enemy.cpp
-  Map.cpp
-  Generating Code...
-x64\Debug\ToolInGame.obj : warning LNK4042: object specified more than once; extras ignored
-  ConsoleApplication1.vcxproj -> D:\project_TD\TD\x64\Debug\ConsoleApplication1.exe
+﻿  ConsoleApplication1.vcxproj -> D:\project_TD\TD\x64\Debug\ConsoleApplication1.exe
