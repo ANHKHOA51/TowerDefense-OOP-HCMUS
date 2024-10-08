@@ -1,10 +1,8 @@
-.vs/
-*.user
-*.suo
-*.dbmdl
-*.jfm
-.x64/
-*.vcxproj
-*.vcxproj.filters
-*.vcxproj.user
+**/x64/
+#
+**/.vs/
+#
+**/*.vcxproj
+**/*.vcxproj.filters
+**/*.vcxproj.user
 
