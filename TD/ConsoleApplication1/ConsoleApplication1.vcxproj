@@ -128,20 +128,29 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp" />
-    <ClCompile Include="td_coordinate.cpp" />
-    <ClCompile Include="td_enemy.cpp" />
-    <ClCompile Include="td_figure.cpp" />
-    <ClCompile Include="td_graphic.cpp" />
-    <ClCompile Include="td_tool.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Coordinate.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Figure.cpp" />
+    <ClCompile Include="Graphic.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Tool.cpp" />
+    <ClCompile Include="ToolConsole.cpp" />
+    <ClCompile Include="ToolInGame.cpp" />
+    <ClCompile Include="ToolInGame.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="td_coordinate.h" />
-    <ClInclude Include="td_enemy.h" />
-    <ClInclude Include="td_figure.h" />
-    <ClInclude Include="td_graphic.h" />
-    <ClInclude Include="td_tool.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Coordinate.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Figure.h" />
+    <ClInclude Include="Graphic.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Tool.h" />
+    <ClInclude Include="ToolConsole.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="bullet.txt" />
     <Text Include="enemy.txt" />
     <Text Include="map.txt" />
     <Text Include="path.txt" />
