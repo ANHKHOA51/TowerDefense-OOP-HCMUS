@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\project_TD\\TD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E73C3A53-94C5-4EE1-88FF-B9A25764D929}|ConsoleApplication1\\ConsoleApplication1.vcxproj|D:\\project_TD\\TD\\ConsoleApplication1\\td_tool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E73C3A53-94C5-4EE1-88FF-B9A25764D929}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\td_tool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E73C3A53-94C5-4EE1-88FF-B9A25764D929}|ConsoleApplication1\\ConsoleApplication1.vcxproj|D:\\project_TD\\TD\\ConsoleApplication1\\map.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{E73C3A53-94C5-4EE1-88FF-B9A25764D929}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\map.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E73C3A53-94C5-4EE1-88FF-B9A25764D929}|ConsoleApplication1\\ConsoleApplication1.vcxproj|D:\\project_TD\\TD\\ConsoleApplication1\\td_enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E73C3A53-94C5-4EE1-88FF-B9A25764D929}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\td_enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E73C3A53-94C5-4EE1-88FF-B9A25764D929}|ConsoleApplication1\\ConsoleApplication1.vcxproj|D:\\project_TD\\TD\\ConsoleApplication1\\td_tool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E73C3A53-94C5-4EE1-88FF-B9A25764D929}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\td_tool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E73C3A53-94C5-4EE1-88FF-B9A25764D929}|ConsoleApplication1\\ConsoleApplication1.vcxproj|D:\\project_TD\\TD\\ConsoleApplication1\\td_coordinate.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -31,6 +39,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "td_tool.cpp",
+              "DocumentMoniker": "D:\\project_TD\\TD\\ConsoleApplication1\\td_tool.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\td_tool.cpp",
+              "ToolTip": "D:\\project_TD\\TD\\ConsoleApplication1\\td_tool.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\td_tool.cpp",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwIwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-07T05:14:07.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "td_tool.h",
+              "DocumentMoniker": "D:\\project_TD\\TD\\ConsoleApplication1\\td_tool.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\td_tool.h",
+              "ToolTip": "D:\\project_TD\\TD\\ConsoleApplication1\\td_tool.h",
+              "RelativeToolTip": "ConsoleApplication1\\td_tool.h",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-07T05:13:27.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "map.txt",
               "DocumentMoniker": "D:\\project_TD\\TD\\ConsoleApplication1\\map.txt",
               "RelativeDocumentMoniker": "ConsoleApplication1\\map.txt",
@@ -38,12 +71,11 @@
               "RelativeToolTip": "ConsoleApplication1\\map.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-06T12:47:22.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T12:47:22.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "td_enemy.cpp",
               "DocumentMoniker": "D:\\project_TD\\TD\\ConsoleApplication1\\td_enemy.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\td_enemy.cpp",
@@ -51,12 +83,11 @@
               "RelativeToolTip": "ConsoleApplication1\\td_enemy.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-06T12:45:38.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T12:45:38.203Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "td_coordinate.cpp",
               "DocumentMoniker": "D:\\project_TD\\TD\\ConsoleApplication1\\td_coordinate.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\td_coordinate.cpp",
@@ -64,12 +95,11 @@
               "RelativeToolTip": "ConsoleApplication1\\td_coordinate.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-06T12:45:34.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T12:45:34.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "td_enemy.h",
               "DocumentMoniker": "D:\\project_TD\\TD\\ConsoleApplication1\\td_enemy.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\td_enemy.h",
@@ -77,8 +107,7 @@
               "RelativeToolTip": "ConsoleApplication1\\td_enemy.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-06T12:45:13.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T12:45:13.886Z"
             }
           ]
         }
