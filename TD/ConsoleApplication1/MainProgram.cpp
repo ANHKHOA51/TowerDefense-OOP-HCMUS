@@ -13,6 +13,10 @@
 
 using namespace std;
 
+namespace winapi {
+    using byte = unsigned char;
+}
+
 int main()
 {
     
