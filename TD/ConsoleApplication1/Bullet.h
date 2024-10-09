@@ -8,226 +8,28 @@ private:
 	int speed;
 
 public:
-	Bullet() {
-		speed = 0;
-	}
+	Bullet();
 
-	Bullet(int speed, string file_name) {
-		setCostume(file_name);
-		this->speed = speed;
-	}
+	Bullet(int, string);
 
-	int getSpeed() {
-		return speed;
-	}
+	int getSpeed();
 
-	void setSpeed(int speed) {
-		this->speed = speed;
-	}
+	void setSpeed(int);
 
-	void shootUP(short startX, short startY, Map& m) {
-		setCurrentCoordinate(startX, startY);
-		Graphic& costume_map = m.getCostume();
-		ToolInGame t = ToolInGame();
+	void shootUP(short, short, Map &);
 
-		if (speed == 0) {
-			t.draw(costume, cur_coord);
-			Sleep(1000);
-			t.erase(costume, cur_coord, costume_map);
-		}
-		else {
-			while (cur_coord.getCoordY() > 0) {
-				t.draw(costume, cur_coord);
-				Sleep(1000 / speed);
-				t.erase(costume, cur_coord, costume_map);
+	void shootDOWN(short, short, Map &);
 
-				startY--;
+	void shootLEFT(short, short, Map &);
+			
+	void shootRIGHT(short, short, Map &);
 
-				setCurrentCoordinate(startX, startY);
+	void shootTOP_LEFT(short, short, Map &);
 
-			}
-		}
+	void shootTOP_RIGHT(short, short, Map &);
 
-	}
+	void shootDOWN_LEFT(short, short, Map &);
 
-	void shootDOWN(short startX, short startY, Map& m) {
-		setCurrentCoordinate(startX, startY);
-		Graphic& costume_map = m.getCostume();
-		ToolInGame t = ToolInGame();
-
-		if (speed == 0) {
-			t.draw(costume, cur_coord);
-			Sleep(1000);
-			t.erase(costume, cur_coord, costume_map);
-		}
-		else {
-			while (cur_coord.getCoordY() < 40) {
-				t.draw(costume, cur_coord);
-				Sleep(1000 / speed);
-				t.erase(costume, cur_coord, costume_map);
-
-				startY++;
-
-				setCurrentCoordinate(startX, startY);
-
-			}
-		}
-
-	}
-
-	void shootLEFT(short startX, short startY, Map& m) {
-		setCurrentCoordinate(startX, startY);
-		Graphic& costume_map = m.getCostume();
-		ToolInGame t = ToolInGame();
-
-		if (speed == 0) {
-			t.draw(costume, cur_coord);
-			Sleep(1000);
-			t.erase(costume, cur_coord, costume_map);
-		}
-		else {
-			while (cur_coord.getCoordX() > 0) {
-				t.draw(costume, cur_coord);
-				Sleep(1000 / speed);
-				t.erase(costume, cur_coord, costume_map);
-
-				startX--;
-
-				setCurrentCoordinate(startX, startY);
-
-			}
-		}
-
-	}
-
-	void shootRIGHT(short startX, short startY, Map& m) {
-		setCurrentCoordinate(startX, startY);
-		Graphic& costume_map = m.getCostume();
-		ToolInGame t = ToolInGame();
-
-		if (speed == 0) {
-			t.draw(costume, cur_coord);
-			Sleep(1000);
-			t.erase(costume, cur_coord, costume_map);
-		}
-		else {
-			while (cur_coord.getCoordX() < 200) {
-				t.draw(costume, cur_coord);
-				Sleep(1000 / speed);
-				t.erase(costume, cur_coord, costume_map);
-
-				startX++;
-
-				setCurrentCoordinate(startX, startY);
-
-			}
-		}
-
-	}
-
-	void shootTOP_LEFT(short startX, short startY, Map& m) {
-		setCurrentCoordinate(startX, startY);
-		Graphic& costume_map = m.getCostume();
-		ToolInGame t = ToolInGame();
-
-		if (speed == 0) {
-			t.draw(costume, cur_coord);
-			Sleep(1000);
-			t.erase(costume, cur_coord, costume_map);
-		}
-		else {
-			while (cur_coord.getCoordX() > 0 && cur_coord.getCoordY() > 0) {
-				t.draw(costume, cur_coord);
-				Sleep(1000 / speed);
-				t.erase(costume, cur_coord, costume_map);
-
-				startX -= 2;
-				startY--;
-
-				setCurrentCoordinate(startX, startY);
-
-			}
-		}
-
-	}
-
-	void shootTOP_RIGHT(short startX, short startY, Map& m) {
-		setCurrentCoordinate(startX, startY);
-		Graphic& costume_map = m.getCostume();
-		ToolInGame t = ToolInGame();
-
-		if (speed == 0) {
-			t.draw(costume, cur_coord);
-			Sleep(1000);
-			t.erase(costume, cur_coord, costume_map);
-		}
-		else {
-			while (cur_coord.getCoordX() < 200 && cur_coord.getCoordY() > 0) {
-				t.draw(costume, cur_coord);
-				Sleep(1000 / speed);
-				t.erase(costume, cur_coord, costume_map);
-
-				startX += 2;
-				startY--;
-
-				setCurrentCoordinate(startX, startY);
-
-			}
-		}
-
-	}
-
-	void shootDOWN_LEFT(short startX, short startY, Map& m) {
-		setCurrentCoordinate(startX, startY);
-		Graphic& costume_map = m.getCostume();
-		ToolInGame t = ToolInGame();
-
-		if (speed == 0) {
-			t.draw(costume, cur_coord);
-			Sleep(1000);
-			t.erase(costume, cur_coord, costume_map);
-		}
-		else {
-			while (cur_coord.getCoordX() > 0 && cur_coord.getCoordY() < 40) {
-				t.draw(costume, cur_coord);
-				Sleep(1000 / speed);
-				t.erase(costume, cur_coord, costume_map);
-
-				startX -= 2;
-				startY++;
-
-				setCurrentCoordinate(startX, startY);
-
-			}
-		}
-
-	}
-
-	void shootDOWN_RIGHT(short startX, short startY, Map& m) {
-		setCurrentCoordinate(startX, startY);
-		Graphic& costume_map = m.getCostume();
-		ToolInGame t = ToolInGame();
-
-		if (speed == 0) {
-			t.draw(costume, cur_coord);
-			Sleep(1000);
-			t.erase(costume, cur_coord, costume_map);
-		}
-		else {
-			while (cur_coord.getCoordX() < 200 && cur_coord.getCoordY() < 40) {
-				t.draw(costume, cur_coord);
-				Sleep(1000 / speed);
-				t.erase(costume, cur_coord, costume_map);
-
-				startX += 2;
-				startY++;
-
-				setCurrentCoordinate(startX, startY);
-
-			}
-		}
-
-	}
-
+	void shootDOWN_RIGHT(short, short, Map &);
 };
 
