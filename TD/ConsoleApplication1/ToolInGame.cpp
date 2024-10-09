@@ -1,7 +1,7 @@
 #pragma once
 #include "ToolInGame.h"
 
-inline static mutex mtx;
+mutex mtx;
 //===============================================================================================//
 void ToolInGame::draw(Graphic& costume, Coordinate& coord) {
 
